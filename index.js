@@ -1,10 +1,10 @@
 const deepmerge = require('deepmerge');
-let checkDir = require('./lib/checkDir')
-let readWildCard = require('./lib/readWildCard')
-let readConfFile = require('./lib/readConfFile')
-let argv = require('minimist')(process.argv.slice(2));
+const checkDir = require('./lib/checkDir')
+const readWildCard = require('./lib/readWildCard')
+const readConfFile = require('./lib/readConfFile')
+const argv = require('minimist')(process.argv.slice(2));
 const envData = process.env;
-let confName = argv.conf || argv.config || envData['USE_CONFIG'] || null;
+const confName = argv.conf || argv.config || envData['USE_CONFIG'] || null;
 
 const root = process.cwd() + '/config'; // path of configs files
 const DOCKER_OLD = '/docker_config';
