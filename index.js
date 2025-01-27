@@ -21,6 +21,8 @@ if(confName === 'dev') {
     config = deepmerge(config, readConfFile(root + '/dev.yml'));
 } else if (confName === 'prod') {
     config = deepmerge(config, readConfFile(root + '/prod.yml'));
+} else if (confName === 'test') {
+    config = deepmerge(config, readConfFile(root + '/test.yml'));
 } else if (!confName) {
     config = deepmerge(config, readWildCard(root + USER_FILES));
 }
