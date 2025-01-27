@@ -1,6 +1,6 @@
 {
   "name": "yml-conf",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Your configs are YML files",
   "main": "index.js",
   "scripts": {
